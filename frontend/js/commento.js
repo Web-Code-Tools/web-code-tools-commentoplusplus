@@ -164,7 +164,7 @@
     if (attr === undefined) {
       return undefined;
     }
-    
+
     return attr.value;
   }
 
@@ -537,7 +537,7 @@
       if(!critical) {
         append($(ID_NOTICE_CONTAINER), messageEl);
         setTimeout(function(){
-          messageEl.remove(); 
+          messageEl.remove();
         }, 5000)
       } else {
         append($(ID_ROOT), messageEl);
@@ -701,7 +701,7 @@
     classAdd(guestNameContainer, "guest-details-container");
     classAdd(clearBr, "clear");
 
-    attrSet(textarea, "placeholder", i18n("Add a comment"));
+    attrSet(textarea, "placeholder", i18n("Leave a comment"));
     attrSet(anonymousCheckbox, "type", "checkbox");
     attrSet(anonymousCheckboxLabel, "for", ID_ANONYMOUS_CHECKBOX + id);
     attrSet(guestName, "type", "text");
@@ -917,12 +917,12 @@
       if(message !== "") {
         errorShow(message);
       }
-      
+
       var commenterHex = selfHex;
       if (commenterHex === undefined || commenterToken === "anonymous") {
         commenterHex = "anonymous";
       }
-      
+
       if (commenterHex === "anonymous" && !$(ID_ANONYMOUS_CHECKBOX + id).checked && $(ID_GUEST_DETAILS_INPUT + id) && $(ID_GUEST_DETAILS_INPUT + id).value.trim().length > 0) {
         commenterHex = id;
         commenters[id] = { provider: "anon", name: anonName, photo: "undefined", link: "" };
@@ -1135,7 +1135,7 @@
       permalink.href = "#commento-" + comment.commentHex;
       permalink.innerText = i18n("permalink");
       permalink.onclick = function() {
-        window.location.hash = "#commento-" + comment.commentHex; loadHash(); commentsRender(); 
+        window.location.hash = "#commento-" + comment.commentHex; loadHash(); commentsRender();
       }
 
       collapse.title = i18n("Collapse children");
@@ -1289,7 +1289,7 @@
       if (isModerator && comment.state !== "approved") {
         append(options, approve);
       }
-      
+
       if (!comment.deleted && (!isModerator && stickyCommentHex === comment.commentHex)) {
         append(options, sticky);
       }
@@ -2097,7 +2097,7 @@
   global.passwordAsk = function(id) {
     var loginBox = $(ID_LOGIN_BOX);
     var subtitle = $(ID_LOGIN_BOX_EMAIL_SUBTITLE);
-    
+
     remove($(ID_LOGIN_BOX_EMAIL_BUTTON));
     remove($(ID_LOGIN_BOX_LOGIN_LINK_CONTAINER));
     remove($(ID_LOGIN_BOX_FORGOT_LINK_CONTAINER));
@@ -2329,7 +2329,7 @@
     global.popupRender(id);
 
     classAdd(mainArea, "blurred");
-    
+
     attrSet(loginBoxContainer, "style", "");
 
     // window.location.hash = ID_LOGIN_BOX_CONTAINER;
@@ -2516,7 +2516,7 @@
     if (initted) {
       return;
     }
-    
+
     dataTagsLoad();
 
     if(!noLive) {
