@@ -14,7 +14,7 @@
   "surround text with <pre>*asterisks*</pre>": "otocz tekst <pre>*jedną gwiazdką*</pre>",
   "surround text with <pre>`backticks`</pre>": "otocz tekst <pre>`backquote`</pre>",
   "surround text with <pre>~~two tilde characters~~</pre>": "otocz tekst <pre>~~dwiema tyldami~~</pre>",
-  "Your Name": "Twoja nazwa",
+  "Your name": "Twoja nazwa",
   " authentication": " uwierzytelnianie",
   " days ago": " dni temu",
   " hours ago": " godzin temu",

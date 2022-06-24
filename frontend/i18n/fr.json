@@ -14,7 +14,7 @@
   "surround text with <pre>*asterisks*</pre>": "entourer le texte d’une <pre>*astérisque*</pre>",
   "surround text with <pre>`backticks`</pre>": "entourer le texte d’<pre>`accent grave`</pre>",
   "surround text with <pre>~~two tilde characters~~</pre>": "entourer le texte de <pre>~~deux tildes~~</pre>",
-  "Your Name": "Votre nom",
+  "Your name": "Votre nom",
   " authentication": " authentification",
   " days ago": " jours",
   " hours ago": " heures",

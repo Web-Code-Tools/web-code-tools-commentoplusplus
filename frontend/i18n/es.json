@@ -14,7 +14,7 @@
   "surround text with <pre>*asterisks*</pre>": "encierre el texto entre <pre>*asteriscos*</pre>",
   "surround text with <pre>`backticks`</pre>": "encierre el texto entre <pre>`comillas invertidas`</pre>",
   "surround text with <pre>~~two tilde characters~~</pre>": "encierre el texto entre <pre>~~pares de virgulillas~~</pre>",
-  "Your Name": "Su nombre",
+  "Your name": "Su nombre",
   " authentication": " autenticación",
   " days ago": " días antes",
   " hours ago": " horas antes",
