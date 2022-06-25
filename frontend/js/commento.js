@@ -1917,15 +1917,15 @@
     attrSet(emailInput, "type", "text");
 
     var numOauthConfigured = 0;
-    var oauthProviders = ["Google", "Twitter", "GitHub", "GitLab"];
+    var oauthProviders = ["google", "twitter", "github", "gitlab"];
     oauthProviders.forEach(function(provider) {
-      if (configuredOauths[provider.toLowerCase()]) {
+      if (configuredOauths[provider]) {
         var button = create("button");
 
         classAdd(button, "button");
-        classAdd(button, provider.toLowerCase() + "-button");
+        classAdd(button, provider + "-button");
 
-        button.innerText = provider.toLowerCase();
+        button.innerText = provider;
 
         onclick(button, global.commentoAuth, {"provider": provider, "id": id});
 
